@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ManualInputActivity">
+
+    <TextView
+            android:id="@+id/title_manual_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/manual_input_activity"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+            android:id="@+id/table_sudoku_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/white"
+            android:stretchColumns="*"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_manual_input">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/TV00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV06"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV08"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/TV10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV18"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/TV20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV28"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            <TextView
+                    android:id="@+id/TV30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV38"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            <TextView
+                    android:id="@+id/TV40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV48"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            <TextView
+                    android:id="@+id/TV50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV53"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV54"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV56"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV57"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV58"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            <TextView
+                    android:id="@+id/TV60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV61"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV62"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV63"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV64"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV65"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV66"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV67"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV68"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            <TextView
+                    android:id="@+id/TV70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV72"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV73"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV74"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV75"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV76"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV77"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV78"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            <TextView
+                    android:id="@+id/TV80"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV81"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV82"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV83"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV84"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV85"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV86"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV87"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            <TextView
+                    android:id="@+id/TV88"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonCellSelect"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+            android:id="@+id/table_numpad"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/table_sudoku_grid">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:id="@+id/button_numpad1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:onClick="updateValue"
+                    android:text="@string/one" />
+
+            <Button
+                    android:id="@+id/button_numpad2"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:onClick="updateValue"
+                    android:text="@string/two" />
+
+            <Button
+                    android:id="@+id/button_numpad3"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:onClick="updateValue"
+                    android:text="@string/three" />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:id="@+id/button_numpad4"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/four"
+                    android:minHeight="0dp"
+                    android:onClick="updateValue"/>
+
+            <Button
+                    android:id="@+id/button_numpad5"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/five"
+                    android:onClick="updateValue"
+                    android:minHeight="0dp"/>
+
+            <Button
+                    android:id="@+id/button_numpad6"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/six"
+                    android:onClick="updateValue"
+                    android:minHeight="0dp"/>
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:id="@+id/button_numpad7"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seven"
+                    android:onClick="updateValue"
+                    android:minHeight="0dp"/>
+
+            <Button
+                    android:id="@+id/button_numpad8"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eight"
+                    android:onClick="updateValue"
+                    android:minHeight="0dp"/>
+
+            <Button
+                    android:id="@+id/button_numpad9"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nine"
+                    android:onClick="updateValue"
+                    android:minHeight="0dp"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:id="@+id/button_numpadC"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:longClickable="true"
+                    android:minHeight="0dp"
+                    android:onClick="updateValue"
+                    android:text="@string/clear" />
+
+            <Button
+                    android:id="@+id/button_numpad_solve"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:onClick="solve"
+                    android:text="@string/solve" />
+
+            <Button
+                    android:id="@+id/demo"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="demoSudoku"
+                    android:text="@string/demo"
+                    android:minHeight="0dp"/>
+        </TableRow>
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
