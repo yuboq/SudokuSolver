@@ -7,7 +7,13 @@ class BigGrid2D: Application() {
     var totalSum = 405
     fun isSolved ():Boolean {
         //checks if gridVals is complete, and if all values are correct
-        if (totalSum !=0){
+        var tempSum = 0
+        for (i in 0..8){
+            for (j in 0..8){
+                tempSum+=gridVals[i][j];
+            }
+        }
+        if (totalSum != tempSum){
             return false
         }
         print ("current totla sum is " + totalSum)
